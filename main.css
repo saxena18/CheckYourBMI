@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(45,193,253);
+    background: linear-gradient(76deg, rgba(45,193,253,1) 0%, rgba(93,2,85,1) 66%, rgba(93,0,83,1) 98%, rgba(0,0,0,1) 120%);
+    height: 100%;
+    width: 100%;
+}
+.container{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+form{
+    border: 1px solid white;
+    padding-block:  30px;
+    padding-inline: 50px;
+    border-radius: 12px;
+    margin-bottom: 70px;
+    background-color: rgba(128, 128, 128, 0.189);
+}
+h1{
+    font-size: 50px;
+    padding: 12px;
+    color: whitesmoke;
+    font-family: "Inder", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+.userInput{
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: "Inder", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 0;
+    color: white;
+    text-shadow: 1px 1px 1px white;
+}
+.btn{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Inder", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(60, 2, 114);
+    border: 1px solid rgb(60, 2, 114);
+    box-shadow: 2px;
+    border-radius: 12px;
+    padding-inline: 20px;
+    padding-block: 12px;
+}
+#height {
+    padding-inline: 12px;
+    padding-block: 5px;
+    margin-left: 12px;
+    background: transparent;
+    border: 5px solid blueviolet;
+
+}
+#height::placeholder{
+    font-size: 15px;
+    font-family: "Inder", sans-serif;
+    padding: 5px;  
+}
+#weight {
+    padding-inline: 12px;
+    padding-block: 5px;
+    margin-left: 12px;
+    background: transparent;
+    border: 5px solid blueviolet;
+    position: relative;
+}
+#weight::placeholder{
+    font-size: 15px;
+    font-family: "Inder", sans-serif;
+    padding: 5px;  
+}
+#results{
+    position: absolute;
+    left: 700px;
+    bottom: 360px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Inder", sans-serif;
+    color: whitesmoke;
+}
+h3{
+     font-size: 30px;
+     font-family: "Inder", sans-serif;
+     letter-spacing: 2px;
+     text-align: center;
+     color: whitesmoke;
+     text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+p{
+    font-size: 25px;
+    font-family: "Inder", sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px white;
+}
+
+/* Media Query for Mobile Screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .userInput {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+    #results {
+        left: 65%;
+        transform: translateX(-50%);
+        bottom: 52%;
+        font-size: 10px;
+    }
+}
